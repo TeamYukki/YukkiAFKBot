@@ -20,7 +20,7 @@ from Yukki.database import get_afk_users, get_served_chats
 
 
 @app.on_message(filters.command("afkusers") & filters.user(SUDOERS))
-async def activevc(_, message: Message):
+async def total_users(_, message: Message):
     afk_users = []
     try:
         chats = await get_afk_users()
