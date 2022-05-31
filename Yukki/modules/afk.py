@@ -19,7 +19,7 @@ from Yukki.helpers import get_readable_time
 
 
 @app.on_message(filters.command(["afk", f"afk@{botname}"]))
-async def activevc(_, message: Message):
+async def active_afk(_, message: Message):
     if message.sender_chat:
         return
     user_id = message.from_user.id
