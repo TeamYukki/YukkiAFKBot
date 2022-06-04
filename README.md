@@ -45,7 +45,7 @@ See [LICENSE](LICENSE) for more information.
 
 ## 🥹 Acknowledgements
 
-Special thanks to these amazing projects/people which/who help power Yukki Music Bot:
+Special thanks to these amazing projects/people which/who help power Yukki AFK Bot:
 
 - [Pyrogram](https://github.com/pyrogram/pyrogram)
 - [TheHamkerCat](https://github.com/TheHamkerCat)
