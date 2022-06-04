@@ -20,6 +20,10 @@ A Powerful Telegram AFK Bot written in pyrogram using MongoDB as database and wi
 - [Telegram Bot Token](https://t.me/botfather)
 - [MongoDB URI](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
 
+## 🚀 Heroku Deployment
+
+<h4>Click the button below to deploy Yukki AFK Bot on Heroku!</h4>    
+<a href="https://yukki.tech/deploy/"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
 
 ## 🖇 VPS Deployment
 
