@@ -23,6 +23,10 @@ db = mongo.AFK
 
 botid = 0
 botname = ""
+botusername = ""
+
+cleanmode = {}
+
 
 SUDOERS = config.SUDO_USER
 
@@ -35,10 +39,11 @@ app = Client(
 
 
 async def initiate_bot():
-    global botid, botname
+    global botid, botname, botusername
     await app.start()
     getme = await app.get_me()
     botid = getme.id
+    botusername = getme.username
     if getme.last_name:
         botname = getme.first_name + " " + getme.last_name
     else:
