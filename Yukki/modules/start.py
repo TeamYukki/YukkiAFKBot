@@ -87,6 +87,7 @@ async def on_private_help(_, message: Message):
 @app.on_callback_query(filters.regex("close"))
 async def on_close_button(client, CallbackQuery):
     await CallbackQuery.answer()
+    await CallbackQuery.message.delete()
 
 @app.on_callback_query(filters.regex("cleanmode_answer"))
 async def on_cleanmode_button(client, CallbackQuery):
