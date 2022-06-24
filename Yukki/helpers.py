@@ -47,7 +47,7 @@ async def put_cleanmode(chat_id, message_id):
     time_now = datetime.now()
     put = {
         "msg_id": message_id,
-        "timer_after": time_now + timedelta(minutes=1),
+        "timer_after": time_now + timedelta(minutes=5),
     }
     cleanmode[chat_id].append(put)
 
