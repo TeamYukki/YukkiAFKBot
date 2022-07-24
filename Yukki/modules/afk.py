@@ -13,12 +13,12 @@ import time
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Yukki import app, botname
+from Yukki import app, botusername
 from Yukki.database import add_afk, is_afk, remove_afk
 from Yukki.helpers import get_readable_time, put_cleanmode
 
 
-@app.on_message(filters.command(["afk", f"afk@{botname}"]) & ~filters.edited)
+@app.on_message(filters.command(["afk", f"afk@{botusername}"]) & ~filters.edited)
 async def active_afk(_, message: Message):
     if message.sender_chat:
         return
@@ -51,7 +51,7 @@ async def active_afk(_, message: Message):
                 else:
                     send = await message.reply_animation(
                         data,
-                        caption=f"**{message.from_user.first_name}** is back online and was away for {seenago}\n\nReason: `{reasonafk}",
+                        caption=f"**{message.from_user.first_name}** is back online and was away for {seenago}\n\nReason: `{reasonafk}`",
                     )
             if afktype == "photo":
                 if str(reasonafk) == "None":
