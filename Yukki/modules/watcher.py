@@ -29,11 +29,12 @@ async def chat_watcher_func(_, message):
     userid = message.from_user.id
     user_name = message.from_user.first_name
     if message.entities:
+        botusername = botusername.lower()
         possible = ["/afk", f"/afk@{botusername}"]
         message_text = message.text or message.caption
         for entity in message.entities:
             if entity.type == "bot_command":
-                if (message_text[0 : 0 + entity.length]) in possible:
+                if (message_text[0 : 0 + entity.length]).lower() in possible:
                     return
 
     msg = ""
